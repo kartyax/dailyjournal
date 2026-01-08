@@ -13,6 +13,7 @@ if (!isset($_SESSION['username'])) {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <title>My Daily Journal | Admin</title>
 	<link rel="icon" href="img/logo.png" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
@@ -29,7 +30,7 @@ if (!isset($_SESSION['username'])) {
 </style>
   </head>
   <body>
-    		<!-- nav begin -->
+    <!-- nav begin -->
     <nav class="navbar navbar-expand-sm bg-body-tertiary sticky-top bg-danger-subtle">
     <div class="container">
         <a class="navbar-brand" target="_blank" href=".">My Daily Journal</a>
