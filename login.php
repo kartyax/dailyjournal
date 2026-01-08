@@ -35,7 +35,7 @@ if (isset($_SESSION['username'])) {
               <div class="text-center mb-3">
                 <div class="text-center mb-3">
                   <i class="bi bi-person-circle h1 display-4"></i>
-                  <p>My Daily Journal</p>
+                  <p>Welcome to aMy Daily Journal</p>
                   <hr />
                 </div>
                 <form action="" method="POST" id="loginForm">
