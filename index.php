@@ -68,7 +68,7 @@ include "koneksi.php"
               <a class="nav-link" href="#article">Article</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="gallery.php">Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="login.php" target="_blank">Login</a>
@@ -153,18 +153,22 @@ include "koneksi.php"
         <h1 class="fw-bold display-4 pb-3">Gallery</h1>
         <div id="carouselExample" class="carousel slide">
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/gal1.jpg" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="img/gal2.jpg" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="img/gal4.jpg" class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src="img/gal5.jpg" class="d-block w-100" alt="..." />
-            </div>
+            <?php
+            $sql_gallery = "SELECT * FROM gallery ORDER BY tanggal DESC";
+            $hasil_gallery = $conn->query($sql_gallery);
+            $is_active = true;
+
+            while ($row_gallery = $hasil_gallery->fetch_assoc()) {
+                $active_class = $is_active ? 'active' : '';
+                $is_active = false;
+            ?>
+              <div class="carousel-item <?= $active_class ?>">
+                <img src="img/<?= $row_gallery['gambar'] ?>" class="d-block w-100" alt="<?= $row_gallery['judul'] ?>" />
+              </div>
+            <?php
+            }
+            ?>
+
           </div>
           <button
             class="carousel-control-prev"

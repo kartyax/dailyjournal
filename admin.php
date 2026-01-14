@@ -30,7 +30,7 @@ if (!isset($_SESSION['username'])) {
 </style>
   </head>
   <body>
-    <!-- nav begin -->
+    <!-- NAV START -->
     <nav class="navbar navbar-expand-sm bg-body-tertiary sticky-top bg-danger-subtle">
     <div class="container">
         <a class="navbar-brand" target="_blank" href=".">My Daily Journal</a>
@@ -72,8 +72,8 @@ if (!isset($_SESSION['username'])) {
         </div>
     </div>
     </nav>
-    <!-- nav end -->
-	<!-- content begin -->
+    <!-- NAV END -->
+	<!-- CONTENT START -->
     <section id="content" class="p-5">
         <div class="container"> 
         <?php
@@ -88,8 +88,8 @@ if (!isset($_SESSION['username'])) {
             ?>
         </div> 
     </section>
-    <!-- content end -->
-	<!-- footer begin -->
+    <!-- CONTENT END -->
+	<!-- FOOTER START -->
     <footer class="text-center p-3 bg-danger-subtle">
 			<div>
 				<a href="https://www.instagram.com/udinusofficial"><i class="bi bi-instagram h2 p-2 text-dark"></i></a>
@@ -98,7 +98,7 @@ if (!isset($_SESSION['username'])) {
 			</div>
 			<div>Aprilyani Nur Safitri &copy; 2023</div>
     </footer>
-    <!-- footer end -->
+    <!-- FOOTER END -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
