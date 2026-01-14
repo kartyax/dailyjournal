@@ -1,7 +1,7 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 
-$servername = "localhost";
+$servername = "db";
 $username = "root";
 $password = "";
 $db = "webdailyjournal";
