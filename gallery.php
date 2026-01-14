@@ -28,7 +28,7 @@
                     <tr>
                         <th>No</th>
                         <th class="w-25">Deskripsi</th>
-                        <th class="w-50"></th>
+                        <th class="w-25"></th>
                         <th class="w-50">Gambar</th>
                         <th class="w-25">Aksi</th>
                     </tr>
